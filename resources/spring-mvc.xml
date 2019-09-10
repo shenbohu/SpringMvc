@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                        http://www.alibaba.com/schema/stat http://www.alibaba.com/schema/stat.xsd">
+
+
+
+
+    <!--Controller的组件扫描-->
+   <context:component-scan base-package="com.itheima.controller">
+            <!--       包含-->
+<!--       只扫描  com.itheima.controller 下的Controller 注解 -->
+       <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+<!--       exclude-filter 不包含-->
+   </context:component-scan>
+
+<!--    配置内置资源视图解析器-->
+    <bean id="InternalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<!--        输入网址的前缀  可以省略 UserController 里面输入的/jsp jsp-->
+        <property name="prefix" value="/jsp/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+
+<!--            <bean class="org.springframework.http.converter.StringHttpMessageConverter">-->
+<!--                <property name="supportedMediaTypes" value = "text/plain;charset=UTF-8" />-->
+<!--            </bean>-->
+
+<!--    mvc的注解驱动-->
+<mvc:annotation-driven/>
+
+<!--    开放资源的访问-->
+<!--    mapping 映射地址 找 js/jquery-3.3.1.js-->
+<!--    location 那个目录下的资源对外开放-->
+<!--    <mvc:resources mapping="/js/**" location="/js/"/>-->
+<!--    <mvc:resources mapping="/img/**" location="/img/"/>-->
+
+<!--    找不到 用Tomcat找资源-->
+<!--    开启所有静态资源访问-->
+<mvc:default-servlet-handler/>
+
+
+<!--    配置文件上传组件-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="UTF-8"></property>
+        <property name="maxInMemorySize" value="50000"></property>
+
+    </bean>
+
+
+<!--    <context:component-scan base-package="com.itheima.controller">-->
+<!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+<!--    </context:component-scan>-->
+
+<!--    <bean id="InternalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+<!--        <property name="prefix" value="/jsp/"></property>-->
+<!--        <property name="suffix" value=".jsp"></property>-->
+<!--    </bean>-->
+<!--    -->
+<!--    <mvc:annotation-driven/>-->
+<!--    <mvc:default-servlet-handler/>-->
+
+
+
+</beans>
