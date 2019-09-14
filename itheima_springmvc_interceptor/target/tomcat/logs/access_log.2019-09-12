@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:40:55 +0800] "GET / HTTP/1.1" 200 2206 http-bio-80-exec-1 161
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:40:55 +0800] "GET /css/bootstrap.min.css HTTP/1.1" 200 2206 http-bio-80-exec-2 25
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:40:55 +0800] "GET /js/bootstrap.min.js HTTP/1.1" 200 2206 http-bio-80-exec-5 71
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:40:55 +0800] "GET /js/jquery-2.1.0.min.js HTTP/1.1" 200 2206 http-bio-80-exec-3 94
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:40:56 +0800] "GET /checkCodeServlet HTTP/1.1" 200 212 http-bio-80-exec-4 589
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:41:11 +0800] "GET / HTTP/1.1" 200 2206 http-bio-80-exec-10 8
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:41:11 +0800] "GET /checkCodeServlet HTTP/1.1" 200 217 http-bio-80-exec-10 14
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:41:11 +0800] "GET /favicon.ico HTTP/1.1" 200 2206 http-bio-80-exec-10 4
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:41:34 +0800] "GET /add.jsp HTTP/1.1" 404 965 http-bio-80-exec-10 4
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:41:34 +0800] "GET /favicon.ico HTTP/1.1" 200 2206 http-bio-80-exec-10 3
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:41:46 +0800] "GET /jsp/add.jsp HTTP/1.1" 200 2943 http-bio-80-exec-10 566
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:41:46 +0800] "GET /favicon.ico HTTP/1.1" 200 2206 http-bio-80-exec-10 4
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:42:26 +0800] "GET /user/pageQuery HTTP/1.1" 200 2206 http-bio-80-exec-10 9
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:42:26 +0800] "GET /checkCodeServlet HTTP/1.1" 200 210 http-bio-80-exec-10 12
+0:0:0:0:0:0:0:1 - - [12/Sep/2019:09:42:26 +0800] "GET /favicon.ico HTTP/1.1" 200 2206 http-bio-80-exec-10 2

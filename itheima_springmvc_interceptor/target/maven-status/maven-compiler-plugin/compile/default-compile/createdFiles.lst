@@ -1,0 +1,4 @@
+com\itheima\controller\UserController.class
+com\itheima\domain\User.class
+com\itheima\interceptor\LoginInterceptor.class
+com\itheima\servlet\CheckCodeServlet.class
